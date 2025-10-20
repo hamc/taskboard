@@ -1,4 +1,6 @@
-# Constituição
+# 1.  Backend
+
+## Constituição
 
 Crie a **Constituição** de um sistema web chamado **TaskBoard**.
 
@@ -20,7 +22,7 @@ A Constituição deve incluir:
 
 Toda a documentação deve ser escrita **em português**.
 
-# Spec
+## Spec
 
 Versao inicial
 
@@ -39,7 +41,7 @@ Use **formato YAML** compatível com o **Spec-Kit**, mantendo clareza e consist�
 
 O foco é **apenas o backend** neste momento.
 
-# Plan
+## Plan
 
 Com base na **Constituição** e na **Spec** do módulo de tarefas do TaskBoard, gere um **plano de implementação** em **Python com FastAPI**.
 
@@ -53,3 +55,59 @@ O plano deve incluir:
 
 O resultado deve ser **direto e estruturado em YAML**, mostrando claramente o que será necessário para implementar o **backend** do módulo de tarefas.
 
+# 2. Frontend
+
+## Constituição
+
+Expanda a **Constituição do sistema TaskBoard**, incluindo um **frontend moderno**.
+
+O sistema já possui um **backend** desenvolvido em **Python com FastAPI** e **SQLite**, responsável pelas operações de API REST.
+
+Agora, o objetivo é criar o **frontend** do TaskBoard, com as seguintes características:
+
+- Desenvolvido em **Node.js**, utilizando um framework moderno de interface (por exemplo: **Next.js**, **React** ou **SvelteKit**)
+- Gerenciamento da versão do Node feito via **ASDF**
+- Interface **simples, porém moderna**, voltada à produtividade
+- Deve se comunicar com o backend existente por meio das rotas REST já definidas
+- Toda a documentação e mensagens devem permanecer **em português**
+
+A Constituição deve incluir:
+- Missão e papel do frontend dentro do sistema
+- Diretrizes de design e usabilidade
+- Estrutura básica de pastas e organização do código
+- Boas práticas de integração com o backend (ex.: uso de variáveis de ambiente, fetch/axios, tratamento de erros)
+
+## Spec
+
+Com base na **Constituição estendida do TaskBoard**, escreva a **Spec do módulo de frontend**.
+
+Defina:
+
+- **Objetivo do frontend**
+- **Páginas e componentes principais**
+- **Fluxos de navegação e interações com o backend**
+- **Estrutura de pastas sugerida**
+- **Dependências principais** (framework, bibliotecas, ferramentas de build)
+- **Comandos básicos de execução e build**
+- **Exemplo de payloads** consumidos das APIs
+
+Use formato **YAML compatível com o Spec-Kit** e mantenha a documentação em **português**.
+
+
+## Plan
+
+Com base na **Constituição** e na **Spec do módulo de frontend do TaskBoard**, gere um **plano de implementação**.
+
+O plano deve incluir:
+
+- **Arquivos e pastas** a serem criados
+  - Exemplo: `pages/`, `components/`, `services/`
+- **Trechos de código de exemplo**
+  - Incluindo chamada de API para listar tarefas
+- **Passos de execução**
+  - Instalação via **ASDF**
+  - Comandos `npm install`, `npm run dev`, etc.
+- **Integração com o backend existente**
+  - URL base configurável via variável de ambiente
+
+O plano deve ser **direto e estruturado em YAML**, voltado para o desenvolvimento local e com foco em uma interface **simples, responsiva e moderna**.
